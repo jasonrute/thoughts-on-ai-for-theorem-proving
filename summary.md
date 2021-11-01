@@ -1,0 +1,17 @@
+## Summary of my thoughts on AI for theorem proving
+#draft/aitp_thoughts
+- - - -
+There are a few guiding observations / principles / beliefs which inform how I see this area:
+ 
+### AI is (almost by definition) general
+It is almost impossible to define “AI”.  However, the technologies which seem most exciting and revolutionary in the AI realm are those which have two qualities (1) they are general purpose, and (2) they do things that were previously only capable by humans.  While this is far from a definition, modern (second wave) AI systems based on deep neural networks seem to satisfy these characteristics.  With NN based image detectors there is no need for a separate detector for a cat and a dog.  One CNN architecture can handle most any image recognition task (with appropriate training data).  Further, some language model architectures (such as Transformers) are applicable to areas as diverse as language translation, image recognition, protein folding, and theorem proving.  NNs also capture approximations of the human qualities of “perception” and “intuition”.  There is a wealth of ideas on how to train NNs such as reinforcement learning (RL) and self-supervised learning which begin to capture the human ability to learn from the world around us without clear training data, or even well-defined objectives.
+
+Now, one shouldn’t too quickly dismiss first wave AI either.  Logical systems like Prolog, SAT solvers, and constraint solvers, while more mechanical and brute force in nature, still capture the generality of logic and the human ability to systemically reason though all cases.  Indeed, many deep learning systems like AlphaGo, use similar ideas such as tree search for case analysis and exploration.
+
+Focusing on this generality, we should likely expect that future “AI”, however it is built will find methods which are increasingly flexible.  Single agents which can soak up information from multiple settings and modalities, being able to play chess, read a book, and prove difficult theorems.  Moreover, they will display human like abilities to communicate ideas, and to condense their understanding of a solution to an algorithm or formal proof.
+### AI already works for theorem proving
+Given that AI is so general, we shouldn’t be surprised that it works for theorem proving.  It has been shown time and time again that the state of the art ideas in AI (deep learning, language modeling, reinforcement learning, self-supervised learning, etc) when implemented to theorem proving, work.  These systems solve a non-negligible number of theorems, rivaling hammers which rely on carefully crafted logical reasoning.  They can be quickly built and the same ideas consistently work in new settings.
+### Theorem proving is still one of AI’s greatest challenges
+While there is much cause for optimism, there is even more cause for realism.  The theorem proving done by mathematicians, or even advanced undergraduates, is well out of reach of modern computers.  Sure, a good agent can solve some non-trivial examples, but it can’t read math papers, formalize mathematics consistently, or show the sort of skills one would hope to find in a solid mathematical agent.
+
+But that is also what makes this area so exciting.  Sure an agent can write a poem or a short story, but can it reason in a way which is grounded and unambiguous?  Can it show “mastery” of a topic?  Can it read informal, but technical literature?  Can it write in formal code?  This is a challenge which I personally find quite exciting.
